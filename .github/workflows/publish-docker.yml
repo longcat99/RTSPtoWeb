@@ -1,6 +1,7 @@
 name: Create and publish Docker image
-
 on:
+  schedule:
+    - cron: 0 20 * * *
   release:
     types: [created]
 
